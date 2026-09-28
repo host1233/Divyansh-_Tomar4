@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h1>
+        Passing an object to a function
+    </h1>
+    <script>
+        function show(object)
+        {
+              alert(JSON.stringify("  Product Name = " + object.name));
+                alert(JSON.stringify("  Product price = " + object.price));
+                console.log(" Product Name = "  + object.name);
+                console.log("  Product Price = "  + object.price);
+        }
+        let product={
+            name:(prompt("plz enter your product name ")),
+            price:Number(prompt("plz enter your price"))
+        };
+        show(product);
+    </script>
+</body>
+</html>

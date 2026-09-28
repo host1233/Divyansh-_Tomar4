@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h1>
+        Returning an object froma function
+    </h1>
+    <script>
+        function create(name,age)
+        {
+            return{
+                Name:name,
+                Age:age,
+            };
+        }
+
+
+        let student=create(
+  (prompt("plz enter your name:")),
+             Number (prompt("plz enter your  age:")),
+    );
+
+      console.log(student);
+        alert(JSON.stringify(student));
+    
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>object</title>
+</head>
+<body>
+    <h1>Modifying object values</h1>
+    <script>
+        let mobile={
+            name:(prompt("plz enter brand name:")),
+            model:(prompt("plz enter model name:")),
+            price:(prompt("plz enter price:")),
+        };
+        let oldprice=mobile.price;
+         mobile.price=50000;
+          console.log("Price before update = " + oldprice);
+         alert("price before update = " +oldprice + "\n price after update = " + mobile.price);
+       
+         console.log("Price after update = " + mobile.price);
+        
+            alert(JSON.stringify(" Name = " + mobile.name));
+       alert(JSON.stringify("Model = " + mobile.model));
+         alert(JSON.stringify("Price = " + mobile.price));
+    
+
+        console.log("Name =  "  + mobile.name);
+        console.log(" Model = "  + mobile.model);
+          console.log(" Price = "  + mobile.price);
+    </script>
+</body>
+</html>
